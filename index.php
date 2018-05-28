@@ -321,10 +321,10 @@ function formatar(mascara, documento){
 															</div>
 															<div class="col-md-8">
 																<div class="row">
-																	<form id="contact" action="" method="post">
+																	<form id="contact" action="envia_email.php" method="post">
 																		<div class="col-md-6">
 																			<fieldset>
-																			<input id="name" class="form-control" name="name" placeholder="Nome" required="" type="text">
+																			<input id="nome" class="form-control" name="nome" placeholder="Nome" required="" type="text">
 																			</fieldset>
 																		</div>
 																		<div class="col-md-6">
@@ -334,7 +334,7 @@ function formatar(mascara, documento){
 																		</div>
 																		<div class="col-md-12">
 																			<fieldset>
-																			<textarea id="message" class="form-control" name="message" placeholder="Mensagem" required="" rows="6"></textarea>
+																			<textarea id="msg" class="form-control" name="msg" placeholder="Mensagem" required="" rows="6"></textarea>
 																			</fieldset>
 																		</div>
 																		<div class="col-md-12">

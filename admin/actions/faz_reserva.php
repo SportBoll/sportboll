@@ -10,6 +10,7 @@ if ((!isset ($_SESSION['login_user']) == true)) {
 
 $id_user = $_SESSION['ID_PESSOA'];
 
+$nome =  $_GET['nome'];
 $data1 = $_GET['data1'];
 $data2 = $_GET['data2'];
 $totalH = $_GET['totalH'];
@@ -23,6 +24,19 @@ $dataReservar = $d->format('Y/m/d');
 $dataReserva = date('Y/m/d');
 $v1 = new Reserva();
 
+
+include '../class/email.class.php';
+$email = new Email();
+$email->setMensagem("
+             Reserva efetuada com sucesso. <br><br>
+             Data: $dataReserva <br>
+             Horario: $_data1 - $_data2 <br>
+             Ginásio: $nome <br><br><br><br><br><br>
+             
+             Sistema de reservas SportBoll
+            ");
+$email->send();
+
 $v1->setIdpessoa($id_user);
 $v1->setIdquadra($idQuadra);
 $v1->setData("'$dataReservar'");
@@ -33,5 +47,9 @@ $v1->setFim("'$_data2:00'");
 $v1->setDatareserva("'$dataReserva'");
 
 $v1->cadastraReserva();
+
+//envia email
+
+//envia email
 
 ?>

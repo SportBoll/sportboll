@@ -290,7 +290,7 @@ $resultado_busca = $v1->buscaID($id);
 
                 <br>
                 <div class="text-center">
-                    <a type="submit" href="./admin/actions/faz_reserva.php/?id_quadra=<?php echo $id ?>&data1=<?php echo $data1 ?>&data2=<?php echo $data2 ?>&totalH=<?php echo $total_horas ?>&valor=<?php echo $valorT ?>" class="btn btn-warning btn-block">CONCLUIR RESERVA </a>
+                    <a type="submit" href="./admin/actions/faz_reserva.php/?id_quadra=<?php echo $id ?>&data1=<?php echo $data1 ?>&data2=<?php echo $data2 ?>&totalH=<?php echo $total_horas ?>&valor=<?php echo $valorT ?>&nome=<?php echo $resultado_busca[0]['NOME'];  ?>" class="btn btn-warning btn-block">CONCLUIR RESERVA </a>
                 </div>
 
             </div>
