@@ -169,8 +169,8 @@ function formatar(mascara, documento){
 		
 		<li>
 		<div class="heading">
-			<h1>Proprietário</h1>
-			<!-- Cadastro Proprietario --><span>"Cadastre sua empresa, seu Ginásio"</span>
+			<h1>Cadastre-se</h1>
+			<!-- Cadastro Proprietario --><span>"Cadastre-se e desfrute ao máximo do nosso sistema de reservas"</span>
 		</div>
 		<div class="cd-half-width third-slide">
 			<!-- Numero qual icone é e pg  -->
@@ -180,50 +180,49 @@ function formatar(mascara, documento){
 						<div class="content third-content">
 							<div class="row">
 								<div class="left-proprietario-text">
-									<h4>Cadastro Proprietário</h4>
+									<h4>Cadastro</h4>
 									<!-- Cadastro Proprietario -->
-									<p>Caso for proprietário de quadra favor prencher 
-									este formulário!</p>
+									<p>Preencha os seus dados e cadastre-se no sistema!</p>
 									<form action="admin/actions/cadastra_usuario.php" method="post">
                                         <div class="row">
                                             <input type="hidden" name="pagina" id="pagina" class="form-control" value="login">
                                             <input type="hidden" name="id" id="id" class="form-control" value="painel">
                                             <div class="col-md-6">
-                                                <label for="inputIsValid" class=" form-control-label">Nome completo</label>
+                                                <label for="inputIsValid" class="pull-left form-control-label">Nome completo</label>
                                                 <input type="text" name="nome" id="nome" class="form-control" placeholder="Nome"
                                                        required>
                                             </div>
                                             <div class="col-md-6">
-                                                <label for="inputIsValid" class=" form-control-label">Seu e-mail</label>
+                                                <label for="inputIsValid" class="pull-left form-control-label">Seu e-mail</label>
                                                 <input type="email" name="email" id="email" class="form-control" placeholder="E-mail"
                                                        required>
                                             </div>
                                         </div>
                                         <div class="row" style="margin-top: 15px; margin-bottom: 15px">
                                             <div class="col-md-6">
-                                                <label for="inputIsValid" class=" form-control-label">Número de telefone</label>
+                                                <label for="inputIsValid" class="pull-left form-control-label">Número de telefone</label>
                                                 <input type="text" name="fone" id="fone" class="form-control" placeholder="Telefone"
                                                        required>
                                             </div>
                                             <div class="col-md-6">
-                                                <label for="inputIsValid" class=" form-control-label">Cidade onde reside</label>
+                                                <label for="inputIsValid" class="pull-left form-control-label">Cidade onde reside</label>
                                                 <input type="text" name="cidade" id="cidade" class="form-control" placeholder="Cidade"
                                                        required>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-md-4">
-                                                <label for="inputIsValid" class=" form-control-label">Escolha um nome de usuário</label>
+                                                <label for="inputIsValid" class="pull-left form-control-label">Escolha um nome de usuário</label>
                                                 <input type="text" name="login" id="login" class="form-control" placeholder="Usuário"
                                                        required>
                                             </div>
                                             <div class="col-md-4">
-                                                <label for="inputIsValid" class=" form-control-label">Escolha uma senha</label>
+                                                <label for="inputIsValid" class="pull-left form-control-label">Escolha uma senha</label>
                                                 <input type="password" name="senha" id="senha" class="form-control" placeholder="Senha"
                                                        required>
                                             </div>
                                             <div class="col-md-4">
-                                                <label for="inputIsValid" class=" form-control-label">Escolha o tipo de cadastro</label>
+                                                <label for="inputIsValid" class="pull-left form-control-label">Escolha o tipo de cadastro</label>
                                                 <select class="form-control" id="nivel" name="nivel">
                                                     <option value="1">Sou usuário, quero reservar.</option>
                                                     <option value="2">Sou proprietario, quero alugar.</option>
@@ -231,7 +230,7 @@ function formatar(mascara, documento){
                                                 </select>
                                             </div>
                                         </div>
-                                        <button type="submit" class="btn btn-success pull-right" style="margin-top: 15px">
+                                        <button type="submit" class="btn btn-info btn-lg pull-right" style="border-radius: 0px; background: rgb(255, 187, 5) ; border: 0px; color: #000; margin-top: 15px">
                                             <i class="fa fa-plus"></i> Salvar
                                         </button>
 									</form>

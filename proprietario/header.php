@@ -58,7 +58,7 @@ $id_user_logado = $_SESSION['ID_PESSOA_PROP'];
                     <li><a href="reservas.php"><i class="menu-icon fa fa-shopping-cart"></i> Reservas</a></li>
                     <li><a href="quadras.php"><i class="menu-icon fa fa-futbol-o"></i> Quadras</a></li>
                     <li><a href="ginasios.php"><i class="menu-icon fa fa-futbol-o"></i> Ginásios</a></li>
-                    <li><a href="login.php"><i class="menu-icon fa fa-close"></i> Sair</a></li>
+                    <li><a href="../index.php"><i class="menu-icon fa fa-close"></i> Sair</a></li>
                 </ul>
             </div>
         </nav>

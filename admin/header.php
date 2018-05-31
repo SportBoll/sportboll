@@ -60,7 +60,7 @@ $id_user_logado = $_SESSION['ID_PESSOA_ADMIN'];
                     <li><a href="ginasios.php"><i class="menu-icon fa fa-futbol-o"></i> Ginásios</a></li>
                     <li><a href="pessoas.php"><i class="menu-icon fa fa-users"></i> Pessoas</a></li>
                     <li><a href="backup.php"><i class="menu-icon fa fa-database"></i> Backup</a></li>
-                    <li><a href="login.php"><i class="menu-icon fa fa-close"></i> Sair</a></li>
+                    <li><a href="../index.php"><i class="menu-icon fa fa-close"></i> Sair</a></li>
                 </ul>
             </div>
         </nav>

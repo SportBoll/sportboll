@@ -4,25 +4,18 @@ if ((!isset ($_SESSION['login_user']) == true)) {
     unset($_SESSION['login_user']);
     header('location:login.php');
 }
-
 $logado = $_SESSION['login_user'];
 $id = $_SESSION['ID_PESSOA'];
-
 require 'admin/class/reservas.class.php';
-
 $v1 = new Reserva();
-
 $v1->setIdpessoa($id);
 $resultado_busca = $v1->buscaTodosID();
-
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title>SportBoll - Minha Conta</title>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
@@ -32,9 +25,7 @@ $resultado_busca = $v1->buscaTodosID();
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
-
 </head>
 
 
@@ -45,7 +36,7 @@ $resultado_busca = $v1->buscaTodosID();
     <a class="navbar-brand font-weight-bold" style="color: #FFFFFF;"><strong>Sistema de Reservas SportBoll</strong></a>
 
 
-    <a href="./login.php" class="navbar-brand font-weight-bold pull-right" style="color: #FFFFFF; cursor: pointer;">
+    <a href="../index.php" class="navbar-brand font-weight-bold pull-right" style="color: #FFFFFF; cursor: pointer;">
         <i class="fa fa-close"></i> Sair</a>
     <a href="./minha_conta.php" class="navbar-brand font-weight-bold pull-right" style="color: #FFFFFF; cursor: pointer;">
         <i class="fa fa-user"></i> Minha Conta</a>

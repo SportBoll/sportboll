@@ -56,19 +56,6 @@ $resultado_busca = $v1->buscaTodos($_SESSION['ID_PESSOA_PROP']);
                                        required>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <label for="inputIsValid" class=" form-control-label">Nome de usuário do administrador</label>
-                                <input type="text" name="login" id="login" class="form-control" placeholder="Usuário"
-                                       required>
-                            </div>
-                            <div class="col-md-6">
-                                <label for="inputIsValid" class=" form-control-label">Escolha uma senha</label>
-                                <input type="password" name="senha" id="senha" class="form-control" placeholder="Senha"
-                                       required>
-                            </div>
-
-                        </div>
                         <button type="submit" class="btn btn-success pull-right" style="margin-top: 15px">
                             <i class="fa fa-plus"></i> Salvar
                         </button>
@@ -95,7 +82,6 @@ $resultado_busca = $v1->buscaTodos($_SESSION['ID_PESSOA_PROP']);
                             <th>DOCUMENTO</th>
                             <th>CIDADE</th>
                             <th>TELEFONE</th>
-                            <th>LOGIN</th>
                             <th>OPÇÕES</th>
                         </tr>
                         </thead>
@@ -112,9 +98,8 @@ $resultado_busca = $v1->buscaTodos($_SESSION['ID_PESSOA_PROP']);
                                 <td><?php echo $resultado_busca[$i]['DOCUMENTO']; ?></td>
                                 <td><?php echo $resultado_busca[$i]['CIDADE']; ?></td>
                                 <td><?php echo $resultado_busca[$i]['TELEFONE']; ?></td>
-                                <td><?php echo $resultado_busca[$i]['LOGIN']; ?></td>
 
-                                <td>
+                                <td style="min-width: 130px">
                                     <a type="button" class="btn btn-primary btn-sm" href="edita_ginasio.php?id=<?php echo $resultado_busca[$i]['ID_GINASIO']; ?>">
                                         <i class="fa fa-edit"></i>
                                     </a>
