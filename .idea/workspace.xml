@@ -5,31 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="980150d4-8e28-446b-b8ae-9dd97a83ca6a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/cadastropessoa.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/editaproprietario.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/editausuario.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/envia_email.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/excluirproprietario.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/excluirusuario.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/formularioproprietario.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/formulariousuario.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/ginasiocem.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/ginasiosea.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/ginasiotiti.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/ginasiovetor.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/logar.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/logarproprietario.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/logarusuario.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/loginproprietario.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/loginusuario.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/pagamento.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/proprietario.class.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/relatorio.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/restritauser.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/usuario.class.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/validar.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/verificacnpj.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/verificacpf.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -107,7 +83,6 @@
         <option value="$PROJECT_DIR$/admin/class/email.class.php" />
         <option value="$PROJECT_DIR$/envia_email.php" />
         <option value="$PROJECT_DIR$/detalhe_quadra.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/admin/ginasios.php" />
         <option value="$PROJECT_DIR$/admin/actions/cadastra_ginasio.php" />
         <option value="$PROJECT_DIR$/proprietario/actions/cadastra_ginasio.php" />
@@ -115,6 +90,7 @@
         <option value="$PROJECT_DIR$/admin/header.php" />
         <option value="$PROJECT_DIR$/proprietario/header.php" />
         <option value="$PROJECT_DIR$/minhas_reservas.php" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -253,12 +229,12 @@
       <workItem from="1527211553368" duration="770000" />
       <workItem from="1527374642877" duration="1285000" />
       <workItem from="1527457758888" duration="7294000" />
-      <workItem from="1527792377462" duration="3959000" />
+      <workItem from="1527792377462" duration="5900000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="169018000" />
+    <option name="totallyTimeSpent" value="170959000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -610,18 +586,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1527794357749" expanded="true" signature="1619:1632" ph="..." />
-            <marker date="1527794357749" expanded="true" signature="1950:1966" ph="..." />
-            <marker date="1527794357749" expanded="true" signature="2000:2015" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="313">
@@ -667,6 +631,20 @@
         <state relative-caret-position="2196">
           <caret line="298" column="0" lean-forward="true" selection-start-line="298" selection-start-column="0" selection-end-line="298" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="87" column="20" lean-forward="true" selection-start-line="87" selection-start-column="20" selection-end-line="87" selection-end-column="20" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#li#1;n#ul#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#1;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#li#1;n#ul#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#li#2;n#ul#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#li#2;n#ul#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#li#3;n#ul#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
