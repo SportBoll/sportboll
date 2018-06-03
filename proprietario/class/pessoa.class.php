@@ -167,15 +167,22 @@ class Pessoa
 
         $nome = $this->nome;
         $email = $this->email;
-        $senha = $this->senha;
         $cidade = $this->cidade;
         $login = $this->login;
         $fone = $this->telefone;
         $nivel = $this->nivel;
 
-
-        $sql = "INSERT INTO pessoa (ID_PESSOA, NOME, EMAIL, CIDADE, TELEFONE, LOGIN, SENHA, NIVEL) 
+        if(senha == ''){
+            $sql = "INSERT INTO pessoa (ID_PESSOA, NOME, EMAIL, CIDADE, TELEFONE, LOGIN, NIVEL) 
+                VALUES ('', '$nome', '$email', '$cidade', '$fone', '$login', '$nivel')";
+        } else {
+            $senha = md5($this->senha);
+            $sql = "INSERT INTO pessoa (ID_PESSOA, NOME, EMAIL, CIDADE, TELEFONE, LOGIN, SENHA, NIVEL) 
                 VALUES ('', '$nome', '$email', '$cidade', '$fone', '$login', '$senha', '$nivel')";
+        }
+
+
+
 
         if ($query = $link->query($sql)) {
 
@@ -239,7 +246,7 @@ class Pessoa
     {
         include "conexao.php";
 
-        $senha = $this->senha;
+        $senha = md5($this->senha);
         $login = $this->login;
 
         session_start();

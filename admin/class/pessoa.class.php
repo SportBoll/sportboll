@@ -167,7 +167,7 @@ class Pessoa
 
         $nome = $this->nome;
         $email = $this->email;
-        $senha = $this->senha;
+        $senha = md5($this->senha);
         $cidade = $this->cidade;
         $login = $this->login;
         $fone = $this->telefone;
@@ -239,7 +239,7 @@ class Pessoa
     {
         include "conexao.php";
 
-        $senha = $this->senha;
+        $senha = md5($this->senha);
         $login = $this->login;
 
         session_start();

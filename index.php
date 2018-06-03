@@ -225,7 +225,7 @@
                                                     <label for="inputIsValid" class="pull-left form-control-label">Escolha o tipo de cadastro</label>
                                                     <select class="form-control" id="nivel" name="nivel">
                                                         <option value="1">Sou usuário, quero reservar.</option>
-                                                        <option value="2">Sou proprietario, quero alugar.</option>
+                                                        <option value="3">Sou proprietario, quero alugar.</option>
 
                                                     </select>
                                                 </div>

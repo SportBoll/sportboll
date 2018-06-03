@@ -107,8 +107,8 @@ $resultado_busca = $v7->buscaPessoaID();
                 </div>
                 <div class="col-md-4">
                     <label for="inputIsValid" class=" form-control-label">Escolha uma senha</label>
-                    <input type="password" name="senha" id="senha" class="form-control" placeholder="Senha"
-                           required value="<?php echo $resultado_busca[0]['SENHA'] ?>">
+                    <input type="password" name="senha" id="senha" class="form-control" placeholder="Deixe em branco para não alterar"
+                           value="">
                 </div>
 
             </div>

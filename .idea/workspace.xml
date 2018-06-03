@@ -6,6 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="980150d4-8e28-446b-b8ae-9dd97a83ca6a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/admin/class/ginasio.class.php" afterPath="$PROJECT_DIR$/admin/class/ginasio.class.php" />
+      <change beforePath="$PROJECT_DIR$/admin/class/pessoa.class.php" afterPath="$PROJECT_DIR$/admin/class/pessoa.class.php" />
+      <change beforePath="$PROJECT_DIR$/class_user/pessoa.class.php" afterPath="$PROJECT_DIR$/class_user/pessoa.class.php" />
+      <change beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change beforePath="$PROJECT_DIR$/minha_conta.php" afterPath="$PROJECT_DIR$/minha_conta.php" />
+      <change beforePath="$PROJECT_DIR$/proprietario/class/ginasio.class.php" afterPath="$PROJECT_DIR$/proprietario/class/ginasio.class.php" />
+      <change beforePath="$PROJECT_DIR$/proprietario/class/pessoa.class.php" afterPath="$PROJECT_DIR$/proprietario/class/pessoa.class.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,6 +36,8 @@
       <find>proprie</find>
       <find>admin</find>
       <find>enviar</find>
+      <find>ID_PESSOA_PROP</find>
+      <find>senha</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -40,9 +49,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lista_quadras_user.php" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/css/user_painel.css" />
         <option value="$PROJECT_DIR$/css/style_css.css" />
         <option value="$PROJECT_DIR$/actions_user/loga_usuario.php" />
         <option value="$PROJECT_DIR$/login.php" />
@@ -57,17 +63,11 @@
         <option value="$PROJECT_DIR$/admin/reservas.php" />
         <option value="$PROJECT_DIR$/relatorios/finaliza_reserva.php" />
         <option value="$PROJECT_DIR$/class_user/altera_usuario.php" />
-        <option value="$PROJECT_DIR$/minha_conta.php" />
-        <option value="$PROJECT_DIR$/class_user/pessoa.class.php" />
         <option value="$PROJECT_DIR$/proprietario/index.php" />
-        <option value="$PROJECT_DIR$/proprietario/class/pessoa.class.php" />
         <option value="$PROJECT_DIR$/proprietario/class/reservas.class.php" />
         <option value="$PROJECT_DIR$/proprietario/reservas.php" />
-        <option value="$PROJECT_DIR$/proprietario/class/ginasio.class.php" />
-        <option value="$PROJECT_DIR$/admin/class/ginasio.class.php" />
         <option value="$PROJECT_DIR$/admin/login.php" />
         <option value="$PROJECT_DIR$/proprietario/login.php" />
-        <option value="$PROJECT_DIR$/admin/class/pessoa.class.php" />
         <option value="$PROJECT_DIR$/email.php" />
         <option value="$PROJECT_DIR$/admin/backup.php" />
         <option value="$PROJECT_DIR$/admin/pessoas.php" />
@@ -90,7 +90,16 @@
         <option value="$PROJECT_DIR$/admin/header.php" />
         <option value="$PROJECT_DIR$/proprietario/header.php" />
         <option value="$PROJECT_DIR$/minhas_reservas.php" />
+        <option value="$PROJECT_DIR$/admin/class/pessoa.class.php" />
+        <option value="$PROJECT_DIR$/class_user/pessoa.class.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/proprietario/class/ginasio.class.php" />
+        <option value="$PROJECT_DIR$/admin/class/ginasio.class.php" />
+        <option value="$PROJECT_DIR$/proprietario/class/pessoa.class.php" />
+        <option value="$PROJECT_DIR$/minha_conta.php" />
+        <option value="$PROJECT_DIR$/class_user/conexao.php" />
+        <option value="$PROJECT_DIR$/proprietario/class/conexao.php" />
+        <option value="$PROJECT_DIR$/admin/class/conexao.php" />
       </list>
     </option>
   </component>
@@ -132,6 +141,28 @@
             <path>
               <item name="SportBoll.git" type="b2602c69:ProjectViewProjectNode" />
               <item name="SportBoll.git" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="SportBoll.git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SportBoll.git" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="SportBoll.git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SportBoll.git" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="class" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="SportBoll.git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SportBoll.git" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="proprietario" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="SportBoll.git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SportBoll.git" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="proprietario" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="class" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -231,12 +262,12 @@
       <workItem from="1527457758888" duration="7294000" />
       <workItem from="1527792377462" duration="7085000" />
       <workItem from="1527964187099" duration="1386000" />
-      <workItem from="1527978367753" duration="594000" />
+      <workItem from="1527978367753" duration="4374000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="174124000" />
+    <option name="totallyTimeSpent" value="177904000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
@@ -272,88 +303,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/proprietario/class/conexao.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/actions/loga_usuario.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="12" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proprietario/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="27" lean-forward="false" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proprietario/registro.php" />
-    <entry file="file://$PROJECT_DIR$/proprietario/class/reservas.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="591">
-          <caret line="202" column="37" lean-forward="true" selection-start-line="202" selection-start-column="37" selection-end-line="202" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proprietario/reservas.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="2" selection-end-line="13" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proprietario/actions/edita_quadra.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="33" lean-forward="true" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proprietario/class/pessoa.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="259" column="41" lean-forward="false" selection-start-line="259" selection-start-column="27" selection-end-line="259" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proprietario/class/ginasio.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="173" column="103" lean-forward="false" selection-start-line="173" selection-start-column="103" selection-end-line="173" selection-end-column="120" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/proprietario/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="172">
           <caret line="68" column="76" lean-forward="true" selection-start-line="68" selection-start-column="76" selection-end-line="68" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="47" column="36" lean-forward="true" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/actions/cadastra_usuario.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="17" lean-forward="false" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/class/pessoa.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2595">
-          <caret line="173" column="30" lean-forward="false" selection-start-line="173" selection-start-column="30" selection-end-line="173" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -463,13 +416,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/class/ginasio.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="18" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="5" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/class/reservas.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="310">
@@ -573,13 +519,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cadastropessoa.php" />
-    <entry file="file://$PROJECT_DIR$/minha_conta.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-315">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/proprietario.class.php" />
     <entry file="file://$PROJECT_DIR$/verifica_horarios.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -588,17 +527,165 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="87" column="20" lean-forward="true" selection-start-line="87" selection-start-column="20" selection-end-line="87" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../phpMyAdmin/themes/fallen/info.inc.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/actions/loga_usuario.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="9" lean-forward="false" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class_user/altera_usuario.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="11" lean-forward="true" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class_user/pessoa.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="198" column="13" lean-forward="false" selection-start-line="198" selection-start-column="8" selection-end-line="198" selection-end-column="13" />
+          <folding>
+            <marker date="1527987224888" expanded="true" signature="2458:2621" ph="INSERT INTO pessoa... " />
+            <marker date="1527987224888" expanded="true" signature="3537:3758" ph="UPDATE pessoa... " />
+            <marker date="1527987224888" expanded="true" signature="4222:4302" ph="SELECT * FRO... pessoa" />
+            <marker date="1527987224888" expanded="true" signature="4893:4913" ph="SELECT * FRO... pessoa" />
+            <marker date="1527987224888" expanded="true" signature="5200:5257" ph="SELECT * FRO... pessoa" />
+            <marker date="1527987224888" expanded="true" signature="5557:5595" ph="DELETE FROM pessoa... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="58" column="60" lean-forward="false" selection-start-line="58" selection-start-column="60" selection-end-line="58" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="227" column="72" lean-forward="false" selection-start-line="227" selection-start-column="72" selection-end-line="227" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/actions/cadastra_usuario.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="17" lean-forward="false" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/class/pessoa.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="212" column="27" lean-forward="true" selection-start-line="212" selection-start-column="27" selection-end-line="212" selection-end-column="27" />
+          <folding>
+            <marker date="1527987147974" expanded="true" signature="2727:2907" ph="INSERT INTO pessoa... " />
+            <marker date="1527987147974" expanded="true" signature="3741:3910" ph="UPDATE pessoa... " />
+            <marker date="1527987147974" expanded="true" signature="4710:4774" ph="SELECT * FRO... pessoa" />
+            <marker date="1527987147974" expanded="true" signature="5638:5695" ph="SELECT * FRO... pessoa" />
+            <marker date="1527987147974" expanded="true" signature="5978:5998" ph="SELECT * FRO... pessoa" />
+            <marker date="1527987147974" expanded="true" signature="6285:6323" ph="SELECT * FRO... pessoa" />
+            <marker date="1527987147974" expanded="true" signature="6608:6646" ph="DELETE FROM pessoa... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/minha_conta.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="93" column="89" lean-forward="false" selection-start-line="93" selection-start-column="89" selection-end-line="93" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/class/conexao.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proprietario/class/conexao.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="5" lean-forward="true" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proprietario/class/ginasio.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+          <folding>
+            <marker date="1527988743160" expanded="true" signature="2797:2982" ph="INSERT INTO ginasio... " />
+            <marker date="1527988743160" expanded="true" signature="3960:4151" ph="UPDATE ginasio... " />
+            <marker date="1527988743160" expanded="true" signature="4870:4921" ph="SELECT * FRO... ginasio" />
+            <marker date="1527988743160" expanded="true" signature="5203:5263" ph="SELECT * FRO... ginasio" />
+            <marker date="1527988743160" expanded="true" signature="5549:5589" ph="DELETE FROM ginasio... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/class/ginasio.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1385">
+          <caret line="267" column="0" lean-forward="true" selection-start-line="267" selection-start-column="0" selection-end-line="267" selection-end-column="0" />
+          <folding>
+            <marker date="1527988783744" expanded="true" signature="2762:2948" ph="INSERT INTO ginasio... " />
+            <marker date="1527988783744" expanded="true" signature="3926:4117" ph="UPDATE ginasio... " />
+            <marker date="1527988783744" expanded="true" signature="4833:4854" ph="SELECT * FRO... ginasio" />
+            <marker date="1527988783744" expanded="true" signature="5136:5196" ph="SELECT * FRO... ginasio" />
+            <marker date="1527988783744" expanded="true" signature="5482:5522" ph="DELETE FROM ginasio... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proprietario/class/pessoa.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="174" column="24" lean-forward="true" selection-start-line="174" selection-start-column="24" selection-end-line="174" selection-end-column="24" />
+          <folding>
+            <marker date="1527990032783" expanded="true" signature="2719:2882" ph="INSERT INTO pessoa... " />
+            <marker date="1527990032783" expanded="true" signature="2962:3142" ph="INSERT INTO pessoa... " />
+            <marker date="1527990032783" expanded="true" signature="3989:4158" ph="UPDATE pessoa... " />
+            <marker date="1527990032783" expanded="true" signature="4958:5022" ph="SELECT * FRO... pessoa" />
+            <marker date="1527990032783" expanded="true" signature="5872:5929" ph="SELECT * FRO... pessoa" />
+            <marker date="1527990032783" expanded="true" signature="6212:6232" ph="SELECT * FRO... pessoa" />
+            <marker date="1527990032783" expanded="true" signature="6517:6555" ph="DELETE FROM pessoa... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class_user/conexao.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="16" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>

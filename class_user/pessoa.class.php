@@ -150,7 +150,7 @@ class Pessoa
 
         $nome = $this->nome;
         $email = $this->email;
-        $senha = $this->senha;
+        $senha = md5($this->senha);
         $cidade = $this->cidade;
         $login = $this->login;
         $fone = $this->telefone;
@@ -189,7 +189,7 @@ class Pessoa
         $cidade = $this->cidade;
         $fone = $this->telefone;
         $login = $this->login;
-        $senha = $this->senha;
+        $senha = md5($this->senha);
 
         $sql = "UPDATE pessoa SET 
         NOME = '$nome',
@@ -214,7 +214,7 @@ class Pessoa
     {
         include "../admin/class/conexao.php";
 
-        $senha = $this->senha;
+        $senha = md5($this->senha);
         $login = $this->login;
 
         session_start();

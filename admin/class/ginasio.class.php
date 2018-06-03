@@ -170,8 +170,8 @@ class Ginasio
         $documento = $this->documento;
         $id_propr = $id_prop;
 
-        $sql = "INSERT INTO ginasio (ID_GINASIO, NOME, EMAIL, CIDADE, TELEFONE, LOGIN, SENHA, DOCUMENTO, ID_PROPRIETARIO) 
-                VALUES ('', '$nome', '$email', '$cidade', '$fone', '$login', '$senha', '$documento', '$id_propr')";
+        $sql = "INSERT INTO ginasio (ID_GINASIO, NOME, EMAIL, CIDADE, TELEFONE, DOCUMENTO, ID_PROPRIETARIO) 
+                VALUES ('', '$nome', '$email', '$cidade', '$fone', '$documento', '$id_propr')";
 
         if ($query = $link->query($sql)) {
 
@@ -211,8 +211,6 @@ class Ginasio
         $sql = "UPDATE ginasio SET 
         NOME = '$nome',
         EMAIL = '$email',
-        SENHA = '$senha',
-        LOGIN = '$login',
         CIDADE = '$cidade',
         TELEFONE = '$fone',
         DOCUMENTO = '$documento'

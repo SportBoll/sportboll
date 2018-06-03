@@ -171,8 +171,8 @@ class Ginasio
         session_start();
         $id_prop = $_SESSION['ID_PESSOA_PROP'];
 
-        $sql = "INSERT INTO ginasio (ID_GINASIO, NOME, EMAIL, CIDADE, TELEFONE, LOGIN, SENHA, DOCUMENTO, ID_PROPRIETARIO) 
-                VALUES ('', '$nome', '$email', '$cidade', '$fone', '$login', '$senha', '$documento', '$id_prop')";
+        $sql = "INSERT INTO ginasio (ID_GINASIO, NOME, EMAIL, CIDADE, TELEFONE, DOCUMENTO, ID_PROPRIETARIO) 
+                VALUES ('', '$nome', '$email', '$cidade', '$fone', '$documento', '$id_prop')";
 
         if ($query = $link->query($sql)) {
 
@@ -212,8 +212,6 @@ class Ginasio
         $sql = "UPDATE ginasio SET 
         NOME = '$nome',
         EMAIL = '$email',
-        SENHA = '$senha',
-        LOGIN = '$login',
         CIDADE = '$cidade',
         TELEFONE = '$fone',
         DOCUMENTO = '$documento'
