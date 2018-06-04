@@ -37,10 +37,7 @@ $id = $_SESSION['ID_PESSOA_PROP'];
         </div>
     </form>
 <?php
-
 if(isset($_GET['action'])){
-
-
     if(isset($_POST['dtInicial']) == '' || isset($_POST['dtFinal']) == ''){
         $v2 = new Reserva();
         $v2->setIdpessoa($id);
@@ -56,14 +53,12 @@ if(isset($_GET['action'])){
         $v2 = new Reserva();
         $v2->setIdpessoa($id);
         $resultado_busca_reserva = $v2->buscaDataProp($dateI, $dateF);
-        var_dump($resultado_busca_reserva);
     }
 } else {
     $v2 = new Reserva();
     $v2->setIdpessoa($id);
     $resultado_busca_reserva = $v2->buscaTodos();
 }
-
 ?>
 
     <div class="alert alert-success" id="sucesso_exclui" role="alert" style="display: none">
