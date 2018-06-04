@@ -4,70 +4,63 @@ include 'class/quadras.class.php';
 
 include 'class/reservas.class.php';
 
-$v2 = new Reserva();
-$resultado_busca_reserva = $v2->buscaTodos();
-
 $v1 = new Quadra();
 $resultado_busca = $v1->buscaTodos();
-?>
 
+?>
     <div class="alert alert-success" id="sucesso_exclui" role="alert" style="display: none">
         <strong> Quadra removida com sucesso!!!</strong>
     </div>
-
     <div class="alert alert-danger" id="erro_exclui" role="alert" style="display: none">
         <strong>  Erro ao excluir quadra, possivelmente esta quadra esta associado a uma reserva!!!</strong>
     </div>
+    <form action="reservas.php?action" method="post">
+        <div class="card">
+            <div class="card-header">
+                <i class="fa fa-search" style="font-size: 20px"> Pesquisa de Reserva</i>
+            </div>
+            <div class="card-body">
+                <h5>Selecione o intervalo de datas para pesquisar</h5><br>
+                <div class="row">
+                    <div class="col-md-3">
+                        <label for="dtInicial">Data inicial</label>
+                        <input type="date" class="form-control" id="dtInicial" name="dtInicial" required>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="dtFinal">Data final</label>
+                        <input type="date" class="form-control" id="dtFinal" name="dtFinal" required>
+                    </div>
+                    <div class="col-md-3" style="margin-top: 30px">
+                        <input type="submit" class="btn btn-success" value="Pesquisar">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+<?php
 
-<!--    <div class="card">-->
-<!--        <div class="card-header">-->
-<!--            <i class="fa fa-plus-circle" style="font-size: 20px"> Fazer reserva</i>-->
-<!--        </div>-->
-<!--        <div class="card-body">-->
-<!--            <div class="row">-->
-<!--                <div class="col-md-12">-->
-<!--                    <form method="post" action="actions/cadastra_quadra.php">-->
-<!--                        <div class="row">-->
-<!--                            <input type="hidden" name="pagina" id="pagina" class="form-control" value="painel">-->
-<!--                            <input type="hidden" name="id" id="id" class="form-control" value="painel">-->
-<!--                            <div class="col-md-12">-->
-<!--                                <label for="inputIsValid" class=" form-control-label">Descrição da Quadra</label>-->
-<!--                                <textarea type="text" name="descricao" id="descricao" class="form-control" placeholder="Descrição"-->
-<!--                                          required></textarea>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="row" style="margin-top: 15px; margin-bottom: 15px">-->
-<!--                            <div class="col-md-3">-->
-<!--                                <label for="inputIsValid" class=" form-control-label">Horário</label>-->
-<!--                                <input type="text" name="horario" id="horario" class="form-control date-time-mask" placeholder="Horário"-->
-<!--                                       required>-->
-<!--                            </div>-->
-<!--                            <div class="col-md-3">-->
-<!--                                <label for="inputIsValid" class=" form-control-label">Tipo</label>-->
-<!--                                <input type="text" name="tipo" id="tipo" class="form-control" placeholder="Tipo"-->
-<!--                                       required>-->
-<!--                            </div>-->
-<!--                            <div class="col-md-6">-->
-<!--                                <label class=" form-control-label">Selecione um ginásio</label>-->
-<!--                                <select class="form-control" id="id_ginasio" name="id_ginasio">-->
-<!--                                    --><?php
-//                                    for($i = 0; $i <  count($resultado_busca_ginasio); $i++){
-//                                        ?>
-<!--                                        <option value="--><?php //echo $resultado_busca_ginasio[$i]['ID_GINASIO']; ?><!--">-->
-<!--                                            --><?php //echo $resultado_busca_ginasio[$i]['NOME']; ?>
-<!--                                        </option>-->
-<!--                                    --><?php //} ?>
-<!--                                </select>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <button type="submit" class="btn btn-success pull-right" style="margin-top: 15px">-->
-<!--                            <i class="fa fa-plus"></i> Salvar-->
-<!--                        </button>-->
-<!--                    </form>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
+if(isset($_GET['action'])){
+
+    if(isset($_POST['dtInicial']) || isset($_POST['dtFinal'])){
+        $v2 = new Reserva();
+        $resultado_busca_reserva = $v2->buscaTodos();
+    } else{
+        $dataInicial = $_POST['dtInicial'];
+        $dataFinal = $_POST['dtFinal'];
+
+        $dateI = date_format(new DateTime($dataInicial), 'Y-d-m');
+        $dateF = date_format(new DateTime($dataFinal), 'Y-d-m');
+
+        $v2 = new Reserva();
+        $resultado_busca_reserva = $v2->buscaData($dateI, $dateF);
+    }
+} else {
+
+    $v2 = new Reserva();
+    $resultado_busca_reserva = $v2->buscaTodos();
+}
+
+?>
 
 
     <div class="card">

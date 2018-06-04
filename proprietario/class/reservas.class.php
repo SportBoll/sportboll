@@ -211,6 +211,27 @@ class Reserva
 
     }
 
+    public function buscaDataProp($_inicial, $_final)
+    {
+
+        include "conexao.php";
+
+        $sql = "SELECT * FROM reserva 
+                  INNER JOIN quadra on quadra.ID_QUADRA = reserva.ID_QUADRA 
+                  INNER JOIN ginasio on ginasio.ID_GINASIO = quadra.ID_GINASIO 
+                  where DATA between '$_inicial' and '$_final' AND ginasio.ID_PROPRIETARIO = '$this->idpessoa'";
+
+        $result = $link->query($sql);
+
+        $dados = [];
+
+        while ($fetch = $result->fetch_assoc()) {
+            array_push($dados, $fetch);
+        }
+        return $dados;
+
+    }
+
     public function BuscaIDReserva()
     {
 

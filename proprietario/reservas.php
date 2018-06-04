@@ -2,16 +2,68 @@
 include 'header.php';
 include 'class/quadras.class.php';
 
-include 'class/reservas.class.php';
+include './class/reservas.class.php';
 
 $id = $_SESSION['ID_PESSOA_PROP'];
+?>
 
-$v2 = new Reserva();
-$v2->setIdpessoa($id);
-$resultado_busca_reserva = $v2->buscaTodos();
+    <div class="alert alert-success" id="sucesso_exclui" role="alert" style="display: none">
+        <strong> Quadra removida com sucesso!!!</strong>
+    </div>
+    <div class="alert alert-danger" id="erro_exclui" role="alert" style="display: none">
+        <strong>  Erro ao excluir quadra, possivelmente esta quadra esta associado a uma reserva!!!</strong>
+    </div>
+    <form action="reservas.php?action" method="POST">
+        <div class="card">
+            <div class="card-header">
+                <i class="fa fa-search" style="font-size: 20px"> Pesquisa de Reserva</i>
+            </div>
+            <div class="card-body">
+                <h5>Selecione o intervalo de datas para pesquisar</h5><br>
+                <div class="row">
+                    <div class="col-md-3">
+                        <label for="dtInicial">Data inicial</label>
+                        <input type="date" class="form-control" id="dtInicial" name="dtInicial" required>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="dtFinal">Data final</label>
+                        <input type="date" class="form-control" id="dtFinal" name="dtFinal" required>
+                    </div>
+                    <div class="col-md-3" style="margin-top: 30px">
+                        <input type="submit" class="btn btn-success" value="Pesquisar">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+<?php
 
-//$v1 = new Quadra();
-//$resultado_busca = $v1->buscaTodos();
+if(isset($_GET['action'])){
+
+
+    if(isset($_POST['dtInicial']) == '' || isset($_POST['dtFinal']) == ''){
+        $v2 = new Reserva();
+        $v2->setIdpessoa($id);
+        $resultado_busca_reserva = $v2->buscaTodos();
+    } else{
+
+        $dataInicial = $_POST['dtInicial'];
+        $dataFinal = $_POST['dtFinal'];
+
+        $dateI = date_format(new DateTime($dataInicial), 'Y-d-m');
+        $dateF = date_format(new DateTime($dataFinal), 'Y-d-m');
+
+        $v2 = new Reserva();
+        $v2->setIdpessoa($id);
+        $resultado_busca_reserva = $v2->buscaDataProp($dateI, $dateF);
+        var_dump($resultado_busca_reserva);
+    }
+} else {
+    $v2 = new Reserva();
+    $v2->setIdpessoa($id);
+    $resultado_busca_reserva = $v2->buscaTodos();
+}
+
 ?>
 
     <div class="alert alert-success" id="sucesso_exclui" role="alert" style="display: none">
