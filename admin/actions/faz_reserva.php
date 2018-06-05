@@ -18,9 +18,10 @@ $valor = $_GET['valor'];
 $idQuadra = $_GET['id_quadra'];
 $_data1 = str_split($data1, 11)[1];
 $_data2 = str_split($data2, 11)[1];
-$dataReservar =  str_split($data1, 11)[0];
-$d = new DateTime($dataReservar);
-$dataReservar = $d->format('Y/m/d');
+
+$dataReservar = str_split($data1, 10)[0];
+$dataReservar = implode("/",array_reverse(explode("/",$dataReservar)));
+
 $dataReserva = date('Y/m/d');
 $v1 = new Reserva();
 
@@ -32,7 +33,7 @@ $email->setMensagem("
              Data: $dataReserva <br>
              Horario: $_data1 - $_data2 <br>
              Ginásio: $nome <br><br><br><br><br><br>
-             
+
              Sistema de reservas SportBoll
             ");
 $email->send();
@@ -48,8 +49,13 @@ $v1->setDatareserva("'$dataReserva'");
 
 $v1->cadastraReserva();
 
-//envia email
 
-//envia email
+function dateEmMysql($dateSql){
+    $ano= substr($dateSql, 6);
+    $mes= substr($dateSql, 3,-5);
+    $dia= substr($dateSql, 0,-8);
+    return $ano."/".$mes."/".$dia;
+}
+
 
 ?>

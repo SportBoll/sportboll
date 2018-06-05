@@ -67,12 +67,12 @@ $resultado_busca_reserva = $v2->BuscaIDReserva();
     <tbody>
     <tr>
         <td><?php echo $resultado_busca_reserva[0]['ID_RESERVA'];  ?></td>
-        <td><?php echo $resultado_busca_reserva[0]['DATA']; ?></td>
+        <td><?php echo $resultado_busca_reserva[0]['DATA_RESERVADA']; ?></td>
         <td><?php echo $resultado_busca_reserva[0]['STATUS_PAG'];  ?></td>
         <td><?php echo $resultado_busca_reserva[0]['STATUS_RESERVA']; ?></td>
         <td><?php echo $resultado_busca_reserva[0]['INICIO']; ?></td>
         <td><?php echo $resultado_busca_reserva[0]['FIM']; ?></td>
-        <td><?php echo $resultado_busca_reserva[0]['DATA_RESERVADA']; ?></td>
+        <td><?php echo $resultado_busca_reserva[0]['DATA']; ?></td>
     </tr>
 
     </tbody>
