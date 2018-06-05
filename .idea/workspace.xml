@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="980150d4-8e28-446b-b8ae-9dd97a83ca6a" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/relatorios/cobranca.php" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/minhas_reservas.php" afterPath="$PROJECT_DIR$/minhas_reservas.php" />
+      <change beforePath="$PROJECT_DIR$/detalhe_quadra.php" afterPath="$PROJECT_DIR$/detalhe_quadra.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -54,7 +52,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="minhas_reservas.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="detalhe_quadra.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/detalhe_quadra.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="470">
+              <caret line="50" column="140" lean-forward="false" selection-start-line="50" selection-start-column="140" selection-end-line="50" selection-end-column="140" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="minhas_reservas.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/minhas_reservas.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="375">
@@ -116,7 +124,6 @@
         <option value="$PROJECT_DIR$/verifica_horarios.php" />
         <option value="$PROJECT_DIR$/admin/class/email.class.php" />
         <option value="$PROJECT_DIR$/envia_email.php" />
-        <option value="$PROJECT_DIR$/detalhe_quadra.php" />
         <option value="$PROJECT_DIR$/admin/ginasios.php" />
         <option value="$PROJECT_DIR$/admin/actions/cadastra_ginasio.php" />
         <option value="$PROJECT_DIR$/proprietario/actions/cadastra_ginasio.php" />
@@ -142,6 +149,7 @@
         <option value="$PROJECT_DIR$/relatorios/finaliza_reserva.php" />
         <option value="$PROJECT_DIR$/relatorios/cobranca.php" />
         <option value="$PROJECT_DIR$/minhas_reservas.php" />
+        <option value="$PROJECT_DIR$/detalhe_quadra.php" />
       </list>
     </option>
   </component>
@@ -290,12 +298,12 @@
       <workItem from="1527978367753" duration="4964000" />
       <workItem from="1528050824100" duration="12986000" />
       <workItem from="1528164156749" duration="1247000" />
-      <workItem from="1528235535008" duration="4231000" />
+      <workItem from="1528235535008" duration="4688000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="196958000" />
+    <option name="totallyTimeSpent" value="197415000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -424,13 +432,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/envia_email.php" />
-    <entry file="file://$PROJECT_DIR$/detalhe_quadra.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="24" column="37" lean-forward="false" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/user_painel.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -683,6 +684,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/minhas_reservas.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="70" column="52" lean-forward="false" selection-start-line="70" selection-start-column="52" selection-end-line="70" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/minha_conta.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="321">
@@ -691,10 +700,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/minhas_reservas.php">
+    <entry file="file://$PROJECT_DIR$/detalhe_quadra.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="70" column="52" lean-forward="false" selection-start-line="70" selection-start-column="52" selection-end-line="70" selection-end-column="52" />
+        <state relative-caret-position="470">
+          <caret line="50" column="140" lean-forward="false" selection-start-line="50" selection-start-column="140" selection-end-line="50" selection-end-column="140" />
           <folding />
         </state>
       </provider>

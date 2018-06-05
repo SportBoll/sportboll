@@ -48,7 +48,7 @@ $resultado_busca = $v1->buscaID($id);
                 <div class="preview col-md-6">
 
                     <div class="preview-pic tab-content">
-                        <div class="tab-pane active" id="pic-1"><img src="http://placekitten.com/400/252" /></div>
+                        <div class="tab-pane active" id="pic-1"><img src="https://abrilvejario.files.wordpress.com/2016/11/12881_quadra.jpeg" /></div>
                     </div>
 
                 </div>
