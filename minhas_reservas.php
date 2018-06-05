@@ -54,7 +54,7 @@ $resultado_busca = $v1->buscaTodosID();
     <?php if(isset($_GET['operacaoCadastro']) == 1){ ?>
 
     <div class="alert alert-success" role="alert">
-        Reserva efetuada com sucesso!
+        Reserva efetuada com sucesso! Clique no ícone ao lado da reserva e imprima sua fatura.
     </div>
 
     <?php } ?>
@@ -87,7 +87,7 @@ $resultado_busca = $v1->buscaTodosID();
                     <td><?php echo $resultado_busca[$i]['NOME']; ?></td>
                     <td>
 
-                        <a class="btn btn-info" target="_blank" href="relatorios/finaliza_reserva.php?id=<?php echo $resultado_busca[$i]['ID_RESERVA'];?>">
+                        <a class="btn btn-info" target="_blank" href="relatorios/cobranca.php?id=<?php echo $resultado_busca[$i]['ID_RESERVA'];?>">
                             <i class="fa fa-file"></i>
                         </a>
 
