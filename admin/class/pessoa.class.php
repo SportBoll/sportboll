@@ -180,18 +180,18 @@ class Pessoa
         if ($query = $link->query($sql)) {
 
             if ($this->pagina == 'painel') {
-                header('location:../pessoas.php?&operacaoCadastro=1');
+                header('location:../../index.php?&operacaoCadastro=1');
                 exit();
             } else {
-                header('location:../login.php?&operacaoCadastro=1');
+                header('location:../../index.php?&operacaoCadastro=1');
                 exit();
             }
         } else {
             if ($this->pagina == 'painel') {
-                header('location:../pessoas.php?&operacaoCadastro=2');
+                header('location:../../index.php?&operacaoCadastro=2');
                 exit();
             } else {
-                header('location:../login.php?&operacaoCadastro=2');
+                header('location:../../index.php?&operacaoCadastro=2');
                 exit();
             }
         }

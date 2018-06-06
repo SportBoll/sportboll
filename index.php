@@ -357,6 +357,47 @@
         </li>
     </ul>
 </section>
+
+<div class="modal fade" id="resultadoCadastroSucesso" tabindex="-1" role="dialog" aria-labelledby="mediumModalLabel"
+     style="display: none;" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-primary">
+                <h5 class="modal-title" id="mediumModalLabel">Sucesso</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <a><strong> Cadastro realizado com sucesso! </strong></a>
+                <p>Agora você pode fazer login no sistema!</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="resultadoCadastroErro" tabindex="-1" role="dialog" aria-labelledby="mediumModalLabel"
+     style="display: none;" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-warning">
+                <h5 class="modal-title" id="mediumModalLabel">Erro!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <a><strong> Erro ao realizar o cadastro! </strong></a>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <footer>
     <p>Copyright © 2018 |
         <a href="https://www.facebook.com/daniel.breda.9" target="_blank"><em>Daniel
@@ -376,3 +417,30 @@
 
 </html>
 <![endif]-->
+
+
+<?php
+
+if (isset($_GET['operacaoCadastro'])) {
+    $operacao = $_GET['operacaoCadastro'];
+    if ($_GET['operacaoCadastro'] == 1) {
+        ?>
+        <script type="application/javascript">
+            (function ($) {
+                $("#resultadoCadastroSucesso").modal("show");
+            })(jQuery);
+        </script>
+        <?php
+    } else {
+        ?>
+        <script type="application/javascript">
+            (function ($) {
+                $("#resultadoCadastroErro").modal("show");
+            })(jQuery);
+        </script>
+    <?php }
+} else {
+    $operacao = "";
+}
+?>
+
