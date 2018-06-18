@@ -68,61 +68,50 @@
 					<div class="col-md-12">
 						<div class="content first-content">
 							<h4>1-Cadastro de Usuários</h4>
-							<p>Cadastro de usuário é necessário informações como: 
-							Nome, E-mail, Cidade, Telefone, Cpf, Login e Senha. 
-							O usuário poderá excluir e editar seus dados cadastrados 
-							a qualquer momento após o cadastro preenchido.</p>
+							<p>Para verificar horários disponíveis e efetuar a reserva de um horário e local é necessário que
+							o usuário faça um rápido cadastro no menu "Cadastro" na tela principal inserindo algumas informações como: 
+							Nome, E-mail, Cidade, Telefone, Login, Senha e também definir o tipo de cadastro se ele é 
+							usuário e irá reservar horários ou se ele é proprietario de algum ginásio e quer utilizar 
+							o site para controle dele.</p>
 							<br><br>
 							
 							<h4>2-Cadastro de Empresas/Centros Desportivos.</h4>
-							<p>Cadastro de empresa é necessário informações como: 
-							Nome, E-mail, Cidade, Telefone, Endereço, Cnpj, Login 
-							e Senha. O proprietário da quadra desportiva poderá 
-							excluir e editar seus dados cadastrados a qual quer 
-							momento após o cadastro preenchido. </p>
+							<p>Para ter um melhor controle de seus horários é necessário que o proprietário faça um rápido cadastro no menu "Cadastro" da tela principal inserindo algumas informações como: 
+							Nome, E-mail, Cidade, Telefone, Login, Senha e também definir o tipo de cadastro como:"Sou proprietário e quero alugar".</p>
 							<br><br>
 							
 							<h4>3-Tela de Login</h4>
-							<p>A tela de login é dividida em 2 opções para que o 
-							usuário ou o proprietário possa interagir e ter acesso 
-							às informações que eles necessitam, para ter acesso 
-							é preciso que a pessoa que vá interagir com as informações. 
-							Escolha se ele é um usuário ou um proprietário do centro 
-							desportivo e efetuar o login. </p>
+							<p>A tela de login é dividida em 2 opções de login: usuário ou proprietário. Usuário é aquele que deseja reservar um horário e o proprietário
+							é o dono do estabelecimento que irá ser alugado para os jogos. 
+							 </p>
 							<br><br>
 							
 							<h4>4-Acesso a Horários</h4>
-							<p>Para ter acesso a horários o usuario deverá efetuar 
-							o login escolher um local e após definir a data da semana
-							</p>
+							<p>Para ter acesso a horários o usuário deverá efetuar 
+							o login escolher um local e após efetuar a procura de um horário disponível.</p>
 							<br><br>
 							
-							<h4>4-Pagamento/Reserva</h4>
+							<h4>5-Pagamento/Reserva</h4>
 							<p>Somente irá ser reservado um horário a partir do 
-							momento em que um jogador responsável pelo tempo organizar, 
+							momento em que um jogador responsável por organizar a partida, 
 							reservar e efetuar o pagamento da partida.</p>
 							<br><br>
 							
-							<h4>5-Notificações</h4>
+							<h4>6-Notificações</h4>
 							<p>O proprietário do centro desportivo irá receber um 
 							e-mail informando o horário que algum time efetou a 
-							reserva mantendo sempre informado.</p>
+							reserva mantendo-o sempre informado.</p>
 							<br><br>
 							
-							<h4>6-Disponibilidade de Horários</h4>
-							<p>Os Horários serão reservados somente pelo site. Quando 
-							Usuários (jogadores) ligarem ou pedirem horários disponíveis 
-							diretamente com o proprietário do centro desportivo, 
-							ele ficará responsável por repassar para os usuários 
-							para fazer a procura e a reserva através do site ou 
-							se ele preferir ele mesmo acessa o site com sua conta 
-							e efetua a reserva</p>
+							<h4>7-Disponibilidade de Horários</h4>
+							<p>O proprietário do centro desportivo, 
+							ficará responsável por repassar para os usuários 
+							fazer a procura e a reserva através do site.</p>
 							<br><br>
 							
-							<h4>7-Relatórios</h4>
-							<p>O site irá permitir a geração de relatórios com os 
-							horários que foram ou não reservados na data que o proprietário 
-							do centro desportivo definir.</p>
+							<h4>8-Relatórios</h4>
+							<p>O site irá permitir a geração de relatórios de horários reservados ao proprietário 
+							do centro desportivo.</p>
 							<br><br>
 							<div class="primary-button"><!-- Botão volta ao menu -->
 								<a href="#">Clique aqui para voltar ao menu superior</a>

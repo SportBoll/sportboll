@@ -237,9 +237,8 @@
 
         <li>
             <div class="heading">
-                <h1>Quadras disponíveis</h1>
-                <!-- Tela de Imagens Quadras --><span>Imagens
-										de quadras disponíveis para Prática do Esporte</span>
+                <h1>Locais disponíveis</h1>
+                <!-- Tela de Imagens Quadras --><span>Ginásios e quadras disponíveis para Prática do Esporte</span>
             </div>
             <div class="cd-half-width fourth-slide">
                 <!-- Numero qual icone é e pg  -->

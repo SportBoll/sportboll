@@ -48,9 +48,9 @@ $resultado_busca = $v1->buscaID($id);
                 <div class="preview col-md-6">
 
                     <div class="preview-pic tab-content">
-                        <div class="tab-pane active" id="pic-1"><img src="https://abrilvejario.files.wordpress.com/2016/11/12881_quadra.jpeg" /></div>
+                        <div class="tab-pane active" id="pic-1"><img src="\img\item-02.jpg"/></div>
                     </div>
-
+<!--  https://abrilvejario.files.wordpress.com/2016/11/12881_quadra.jpeg -->
                 </div>
                 <div class="details col-md-6">
                     <h3 class="product-title"><?php echo $resultado_busca[0]['NOME']; ?></h3>
